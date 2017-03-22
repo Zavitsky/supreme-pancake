@@ -1,0 +1,20 @@
+[user]
+	name = Andrey Zavitsky
+	email = Andrejs.Zavickis@gmail.com
+[color]
+	ui = true
+[alias]
+	ci = commit
+	st = status -s
+	co = checkout
+	cp = cherry-pick
+	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit
+	amen = commit --amend
+	last = log -n 1 --pretty=format:'%H'
+	in = !"git remote update -p; git lg --stat ..@{u}"
+	out = !git lg --stat @{u}..
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
