@@ -7,7 +7,6 @@ import java.util.List;
 
 public class PhoneBook {
     private List<Record> recordList = new ArrayList<>();
-    private List<String> nameList = new ArrayList<>();
 
     @Command
     public void create(String name, String phone, String address, String email) {
