@@ -20,3 +20,4 @@
 	autosetuprebase = always
 [core]
 	autocrlf = false
+	eol = lf
